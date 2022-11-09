@@ -3,6 +3,8 @@ import customtkinter
 from tkinter import *
 from requests import Session
 
+key = #INSERT YOUR API PRIVATE KEY HERE 
+
 # Set gui theme
 customtkinter.set_appearance_mode("Dark")
 customtkinter.set_default_color_theme("dark-blue")
@@ -151,7 +153,7 @@ def scrape():
     # API key
     headers = {
         'Accepts': 'application/json',
-        'X-CMC_PRO_API_KEY': '0b387bb2-4030-41e2-8631-d9ad8e0f331d'
+        'X-CMC_PRO_API_KEY': key
     }
 
     # Request values from API including headers and parameters
